@@ -8,3 +8,7 @@ Nesse contexto as cargas de produtos químicos recebe especial atenção devido 
 Com uma operação tão complexa e que envolve tantos riscos como o transporte de cargas químicas é de extrema importância uma ótima comunicação entre os envolvidos, além de uma boa gestão e controle de possíveis riscos. É justamente nesse contexto que surge a QuimiPort, uma aplicação com o objetivo de centralizar todo o controle dessas cargas de produtos químicos, concentrando em um só lugar todas as informações da carga, como qual produto é transportado, o nível de risco tanto do produto quanto da carga, a documentação necessária para essa carga, o status da carga e resultado das inspeções realizadas na carga.
 
 ### Navegação
+- [Arquitetura do projeto](documentação/arquitetura.md)
+- [Casos de uso](documentação/casos_de_uso.md)
+- [Diagramas](documentação/diagramas.md)
+- [Domínio](documentação/domínio.md)
