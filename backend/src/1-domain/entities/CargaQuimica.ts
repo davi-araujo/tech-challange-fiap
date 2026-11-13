@@ -44,9 +44,6 @@ export class CargaQuimica {
         if (!params.produto) {
             throw new DomainError('Uma carga química precisa ter um produto químico.');
         }
-        if (!params.produto.status) {
-            throw new DomainError('O produto químico precisa estar ativo.');
-        }
         if (params.quantidade <= 0) {
             throw new DomainError('Uma carga química precisa ter quantidade maior que 0.');
         }
@@ -112,6 +109,9 @@ export class CargaQuimica {
     liberarCarga(): void {
         if (this._status !== 'EM INSPEÇÃO' ) {
             throw new DomainError("Apenas cargas em inspeção podem ser liberadas");
+        }
+        if (!this.urlDocumentacao) {
+            throw new DomainError("Uma carga não pode ser liberada sem documentação");
         }
         this._status = 'LIBERADA';
         this.mudarDataAtualizacao();

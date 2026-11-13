@@ -4,7 +4,7 @@
   "description": "O Porto de Santos, localizado no estado de São Paulo, é o principal porto brasileiro, o maior complexo portuário da América Latina e um dos maiores do mundo. Devido à grande quantidade de docas, funcionários, cargas, navios e empregados, a logística de cargas se torna um grande desafio para as empresas.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
     "dev": "tsx --env-file=backend/.env backend/src/5-main/index.ts"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "@types/node": "^26.6.6",
     "@types/pg": "^8.23.1",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
   }
 }
